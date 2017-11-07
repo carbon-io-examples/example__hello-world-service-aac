@@ -80,7 +80,7 @@ This example expects a running MongoDB database. The code will honor a ```MONGOD
 
 To set the environment variable to point the app at a database different from the default (on Mac):
 ```
-export MONGODB_URI=mongodb://localhost:27017/mydb
+$ export MONGODB_URI=mongodb://localhost:27017/mydb
 ```
 
 ## Running the service
@@ -103,8 +103,9 @@ You can interact with the service via HTTP. To test authentication and access co
 
 ```
 $ mongo
-$ use hello-world
-$ db.users.insert({"name":"chris","apiKey":"test-api-key","role":"Admin"})
+
+> use hello-world
+> db.users.insert({"name":"chris","apiKey":"test-api-key","role":"Admin"})
 ```
 
 Once you have a user, you can test using curl:
