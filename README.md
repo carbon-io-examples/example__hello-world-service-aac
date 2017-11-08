@@ -1,5 +1,7 @@
 # Hello Service (Authentication and access control)
 
+[![Build Status](https://img.shields.io/travis/carbon-io-examples/example__hello-world-service-aac/carbon-0.6.svg?style=flat-square)](https://travis-ci.org/carbon-io-examples/example__hello-world-service-aac)
+
 In this example we introduce the central ideas of authentication and access control. 
 
 The code defining the service is located in ```lib/HelloService.js``` and uses a simple ```Endpoint``` object 
