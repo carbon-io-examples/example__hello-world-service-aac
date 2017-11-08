@@ -1,6 +1,8 @@
 # Hello Service (Authentication and access control)
 
-[![Build Status](https://img.shields.io/travis/carbon-io-examples/example__hello-world-service-aac.svg?style=flat-square)](https://travis-ci.org/carbon-io-examples/example__hello-world-service-aac) ![Carbon Version](https://img.shields.io/badge/carbon--io-0.7-blue.svg?style=flat-square)
+shield-badge
+
+[![Build Status](https://img.shields.io/travis/carbon-io-examples/master/example__hello-world-service-aac.svg?style=flat-square)](https://travis-ci.org/carbon-io-examples/example__hello-world-service-aac) ![Carbon Version](https://img.shields.io/badge/carbon--io-0.7-blue.svg?style=flat-square)
 
 In this example we introduce the central ideas of authentication and access control. 
 
