@@ -4,10 +4,10 @@
 
 
 
-In this example we introduce the central ideas of authentication and access control. 
+In this example we introduce the central ideas of authentication and access control.
 
-The code defining the service is located in ```lib/HelloService.js``` and uses a simple ```Endpoint``` object 
-to implement an HTTP ```GET``` at the path ```/hello```. 
+The code defining the service is located in ```lib/HelloService.js``` and uses a simple ```Endpoint``` object
+to implement an HTTP ```GET``` at the path ```/hello```.
 
 **Authentication**
 
@@ -23,15 +23,15 @@ o({
 })
 ```
 
-This authenticator ensures that an API key is presented for each request to the service and that the 
-supplied API key matches a user in the system. The authenticated user is then attached to the ```request``` 
-object as a field called ```user``` so that it may be used by the request downstream. 
+This authenticator ensures that an API key is presented for each request to the service and that the
+supplied API key matches a user in the system. The authenticated user is then attached to the ```request```
+object as a field called ```user``` so that it may be used by the request downstream.
 
 **Access Control**
 
-Once we have authenticated users, we can then use access control lists (ACLs) to control what operations users can perform. 
+Once we have authenticated users, we can then use access control lists (ACLs) to control what operations users can perform.
 
-The ```hello``` endpoint defines an ACL that defines different permissions for users based on their *role*. 
+The ```hello``` endpoint defines an ACL that defines different permissions for users based on their *role*.
 
 ```node
 o({
@@ -69,7 +69,7 @@ o({
 ## Installing the service
 
 We encourage you to clone the git repository so you can play around
-with the code. 
+with the code.
 
 ```
 $ git clone -b carbon-0.7 git@github.com:carbon-io-examples/example__hello-world-service-aac.git
@@ -121,13 +121,13 @@ $ curl localhost:8888/hello -H "ApiKey: test-api-key"
 
 ## Running the unit tests
 
-This example comes with a simple unit test written in Carbon.io's test framework called TestTube. It is located in the ```test``` directory. 
+This example comes with a simple unit test written in Carbon.io's test framework called TestTube. It is located in the ```test``` directory.
 
 ```
 $ node test/HelloServiceTest
 ```
 
-or 
+or
 
 ```
 $ npm test
